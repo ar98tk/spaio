@@ -1,0 +1,91 @@
+
+
+
+.wcu-wrapper {
+    &.style1 {
+        position: relative;
+
+        .shape1 {
+            position: absolute;
+            bottom: -380px;
+            right: 0;
+        }
+    }
+}
+
+
+.wcu-thumb {
+    &.style1 {
+        position: relative;
+        margin-bottom: 130px;
+        @include breakpoint (max-lg) {
+            margin-bottom: 130px;
+        }
+
+        .thumb1 { 
+            position: relative;
+            z-index: 1;
+
+            @include breakpoint (max-md) { 
+              width: 100%; 
+            }
+        }
+
+        .thumb2 {
+            position: absolute;
+            bottom: -125px;
+            right: 100px;
+            z-index: 1;
+        }
+
+        .shape1 {
+            position: absolute;
+            bottom: -100px;
+            left: 0;
+            z-index: 1;
+        }
+
+        .shape2 {
+            position: absolute;
+            bottom: 30px;
+            right: 50px;
+            z-index: 3;
+        }
+    }
+}
+
+
+
+.wcu-content {
+    &.style1 {
+        .section-title {
+            margin-bottom: 20px;
+        }
+
+        .box {
+            position: relative;
+            padding: 20px 40px 20px 60px;
+            background: $theme-color-2;
+            margin-bottom: 40px;
+            margin-left: 40px;
+            max-width: 482px;
+
+            img {
+                position: absolute;
+                top: 8px;
+                left: -40px;
+            }
+        }
+
+        .contact-meta {
+            .item {
+                p {
+
+                }
+                h4 {
+
+                }
+            } 
+        }
+    }
+}

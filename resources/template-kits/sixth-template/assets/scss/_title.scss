@@ -1,0 +1,68 @@
+/*----------------------------------------------
+    # Title style here
+----------------------------------------------*/
+.section-title{
+	position: relative;
+	z-index: 99; 
+
+	.subtitle{
+		color: $theme-color;  
+		font-family: $body-font;  
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 16px;  
+		letter-spacing: 3.52px;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		color: $title-color; 
+		font-family: $title-font;
+		font-size: 48px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 57.6px;  
+
+		@include breakpoint (max-md) { 
+			font-size: 37px; 
+			line-height: 47.6px;
+		}
+	}
+	p{
+		color: $text-color; 
+		font-family: $title-font;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 150%; 
+		text-align: start;
+		margin-top: 15px;
+	}
+}
+
+.section-title-area	{ 
+	position: relative;
+	z-index: 5; 
+
+	.desc {
+		p {
+			color: $text-color; 
+			font-family: $body-font;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 26.08px;  
+		}
+	}
+	@include breakpoint (max-lg) {
+		flex-wrap: wrap; 
+		gap: 30px;
+	}
+
+ 
+}
+
+
+//>>>>> Section Title End <<<<<// 
+

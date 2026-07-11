@@ -1,0 +1,114 @@
+/**
+ * About
+ */
+
+.about {
+
+    &-us-area {
+        position: relative;
+    }
+
+    &-content {
+        margin-top: -8px;
+
+        h2 {
+            span {
+                font-size: 24px;
+                line-height: 34px;
+            }
+        }
+    }
+
+    &-contentbottom {
+        margin-top: 15px;
+
+        .tm-button,
+        .tm-callbutton {
+            margin-top: 20px;
+        }
+
+        .tm-button {
+            margin-right: 30px;
+        }
+    }
+
+    &-image {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: calc(50% - 85px);
+
+        .tm-videobutton {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &-videobox {
+        position: relative;
+        text-align: center;
+        padding: 0 85px;
+
+        .tm-videobutton {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    @media #{$layout-laptop} {
+        &-image {
+            width: calc(50% - 15px);
+        }
+    }
+
+    @media #{$layout-notebook} {
+        &-image {
+            width: calc(50% - 15px);
+        }
+
+        &-videobox {
+            padding: 0;
+        }
+    }
+
+    @media #{$layout-tablet} {
+        &-image {
+            width: 100%;
+            max-width: 690px;
+            margin: 0 auto;
+            position: relative;
+            min-height: 450px;
+        }
+
+        &-content-2 {
+            margin-top: 30px;
+        }
+
+        &-videobox {
+            padding: 0;
+        }
+    }
+
+    @media #{$layout-mobile-lg} {
+        &-image {
+            width: 100%;
+            max-width: 510px;
+            margin: 0 auto;
+            position: relative;
+            min-height: 350px;
+        }
+
+        &-content-2 {
+            margin-top: 30px;
+        }
+
+        &-videobox {
+            padding: 0;
+        }
+    }
+}

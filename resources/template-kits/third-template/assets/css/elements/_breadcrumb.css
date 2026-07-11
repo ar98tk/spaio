@@ -1,0 +1,30 @@
+/**
+ * Breadcrumb
+ */
+.tm-breadcrumb {
+  margin-top: -5px;
+  margin-bottom: -8px; }
+  .tm-breadcrumb h2 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 10px;
+    color: #ffffff; }
+  .tm-breadcrumb ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    font-size: 0; }
+    .tm-breadcrumb ul li {
+      list-style: none;
+      display: inline-block;
+      font-size: 16px;
+      color: #ffffff; }
+      .tm-breadcrumb ul li::after {
+        content: "/";
+        padding: 0 8px; }
+      .tm-breadcrumb ul li:last-child::after {
+        display: none; }
+      .tm-breadcrumb ul li a {
+        color: #ffffff; }
+        .tm-breadcrumb ul li a:hover {
+          text-decoration: underline; }

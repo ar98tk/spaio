@@ -1,0 +1,49 @@
+/**
+ * Pagination
+ */
+
+.tm-pagination {
+    ul {
+        padding-left: 0;
+        margin-bottom: 0;
+        font-size: 0;
+
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 18px;
+            margin: 0 3px;
+
+            &:first-child {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+
+            &:last-child {
+                margin-right: 0;
+                margin-left: 15px;
+            }
+
+            a {
+                display: inline-block;
+                color: $color-body;
+                font-family: $ff-heading;
+                font-weight: 500;
+                font-size: 18px;
+                text-align: center;
+                min-width: 30px;
+
+                &:hover {
+                    color: $color-theme;
+                }
+            }
+
+            &.is-active {
+                a {
+                    color: $color-theme;
+                    border-bottom: 2px solid $color-theme;
+                }
+            }
+        }
+    }
+}

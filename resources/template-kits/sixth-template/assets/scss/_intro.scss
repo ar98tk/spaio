@@ -1,0 +1,325 @@
+
+
+
+.intro-wrapper {
+    &.style1 {
+        background-image: url(../images/bg/introBg1_1.jpg); 
+
+        @include breakpoint (max-xl) {
+            background-image: none;
+            background: $theme-color;
+        }
+    }
+
+    &.style2 {
+        background: $title-color;
+    }
+}
+
+ 
+.intro-content-wrapper {
+    &.style1 {
+        padding: 117px 0 190px 80px;
+        position: relative;
+        background: $white;
+        @include breakpoint (max-md) {
+            padding: 15px;
+            margin-top: 30px;
+        }
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 130px;
+            bottom: 0;
+            content: '';
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            background: linear-gradient(90deg, #FFF 35.36%, rgba(255, 255, 255, 0.68) 50.95%, rgba(255, 255, 255, 0.00) 66.17%);
+
+            @include breakpoint (max-md) {
+                display: none;
+            }
+        }
+       .intro-content {
+        position: relative;
+        z-index: 5;
+       }
+        h1 {
+            position: relative;
+            color: $title-color; 
+            font-family: $title-font;
+            font-size: 80px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 84.462px;  
+            text-transform: uppercase;
+            z-index: 5;
+            margin-bottom: 20px;
+
+            @include breakpoint (max-md) { 
+                font-size: 40px; 
+                line-height: 60.462px; 
+            }
+        }
+
+        p {
+            color: $text-color; 
+            font-family: $body-font;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 31px;  
+            margin-bottom: 18px;
+        }
+
+        .checklist-wrapper {
+            margin-bottom: 10px;
+        }
+  
+        .intro-thumb {
+            position: absolute; 
+            top: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            @include breakpoint (max-xl) {
+                display: none;
+            }
+        }
+    }
+
+    &.style2 { 
+        display: grid;
+        align-items: center;
+        grid-template-columns: (40% 60%);
+
+        @include breakpoint (max-lg) {
+            grid-template-columns: repeat(1,1fr); 
+        }
+        .intro-thumb {
+            position: relative;
+            padding-top: 82px; 
+            width: 100%;
+
+            img {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                z-index: 3;
+            }
+            .shape1 {
+                position: absolute;
+                top: 200px;
+                left: 10px;
+                z-index: 1;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .shape2 {
+                position: absolute;
+                top: 270px;
+                right: 50px;
+                z-index: 1;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .shape3 {
+                position: absolute;
+                bottom: 30px;
+                left: 20px;
+                z-index: 1;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .intro-content {
+            text-align: end;
+            padding-top: 100px; 
+            padding-bottom: 35px;
+            @include breakpoint (max-md) { 
+               padding-top: 50px;
+            }
+            h1 {
+                color: $white;
+                text-align: right; 
+                font-family: $title-font;
+                font-size: 100px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100px;  
+                text-transform: uppercase;
+                margin-bottom: 15px;
+                span {
+                    color: $theme-color;
+                    text-align: right; 
+                    font-family: $title-font;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 57.6px;  
+                }
+
+                @include breakpoint (max-md) { 
+                    font-size: 70px; 
+                    line-height: 90px; 
+                    text-align: left;
+                    span {
+                        font-size: 35px;
+                    }
+                }
+            }
+
+            p {
+                color: $white;
+                text-align: end; 
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26.08px; 
+                max-width: 410px;
+                margin-left: auto;
+                margin-bottom: 35px;
+
+                @include breakpoint (max-md) { 
+                    font-size: 13px;  
+                    text-align: left; 
+                    padding-right: 10px;
+                }
+            }
+
+            .btn-wrapper {
+                margin-left: auto;
+                margin-bottom: 15px;
+                @include breakpoint (max-md) {  
+                    margin-right: auto;
+                    margin-left: 20px;
+                }
+            }
+
+            .big-text {
+                max-width: 574px;
+                margin-right: auto;
+                text-align: start;
+                color: rgba(255, 255, 255, 0.1);
+                font-family: $title-font;
+                font-size: 100px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100px; 
+                text-transform: uppercase;
+                margin-left: 40px;
+
+                @include breakpoint (max-md) { 
+                    font-size: 65px; 
+                    line-height: 70px; 
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+
+    &.style3 {
+        padding: 290px 0 205px;
+
+        @include breakpoint (max-lg) {
+            padding: 250px 0 120px;
+        }
+
+        @include breakpoint (max-md) {
+            padding: 230px 0 80px;
+        }
+
+        .intro-content {
+            h1 {
+                color: $title-color; 
+                font-family: $body-font;
+                font-size: 100px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 96px; 
+                text-transform: capitalize;
+                margin-bottom: 23px;
+            }
+
+            .text { 
+                color: $text-color; 
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26.08px; 
+                max-width: 350px;
+                margin-bottom: 40px;
+            }
+ 
+        }
+
+        .intro-counter-box {
+            margin-top: 38px;
+        }
+
+        .hero-thumb {
+            border-radius: 500px 500px 0px 0px;
+            background: $theme-color;
+            -webkit-border-radius: 500px 500px 0px 0px;
+            -moz-border-radius: 500px 500px 0px 0px;
+            -ms-border-radius: 500px 500px 0px 0px;
+            -o-border-radius: 500px 500px 0px 0px;
+}
+    }
+}
+
+
+
+.introSliderOne {
+    position: relative; 
+
+    .swiper-pagination {
+        position: absolute;
+        top: 92%;
+        left: 33%;
+        z-index: 1; 
+    }
+
+    .swiper-pagination-bullet {
+        color: $title-color;
+        font-family: $title-font;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        background: transparent;
+        margin: 20px;
+        opacity: 0.3;
+    }
+
+    .swiper-pagination-bullet-active {
+        color: $title-color;
+        font-family: $title-font;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        background: transparent;
+        opacity: 1;
+    }
+}

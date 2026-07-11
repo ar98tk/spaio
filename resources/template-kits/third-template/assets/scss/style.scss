@@ -1,0 +1,110 @@
+/*
+ * %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ *
+ * Template Name: Dialia - Registered Massage Therapy HTML Template   
+ * Template URI: https://thememarch.com/demo/html/dialia/
+ * Description: Dialia is a registered massage therapy HTML template which comes with the unique and clean design. It helps you to create a beautiful massage therapy HTML website. It's a fully responsive website template. It has also e-commerce support. E-commerce pages are included on this template.
+ * Author: Thememarch
+ * Author URI: https://thememarch.com
+ * Version: 2.0
+ *
+ * %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ */
+
+
+/*
+===========================================================
+    INDEX
+===========================================================
+
+    01) Reset
+    02) Animations
+    03) Typography
+    04) Utilities
+
+    05) Button
+    06) Title
+    07) Slider Elements
+    08) Tab
+    09) Selectbox
+    10) Breadcrumb
+    11) Pagination
+    12) Comment
+    13) Call To Action
+    14) Form Styles
+
+    15) Header
+    16) Navigation
+    17) Heroslider
+    18) About
+    19) Feature
+    20) Pricing & Benifits
+    21) Funfact
+    22) Service
+    23) Testimonial
+    24) Product
+    25) Information
+    26) Blog
+    27) Team Member
+    28) Faq Area
+    29) Widgets
+    30) Contact
+    31) Shop
+    32) Mission & Vision
+    33) Footer
+
+    34) Product Details
+    35) Shopping Cart
+    36) Checkout
+    37) My Account
+
+===========================================================
+    END INDEX
+===========================================================
+*/
+
+
+@import 'variables';
+@import 'mixins';
+
+@import 'basic/reset';
+@import 'basic/animations';
+@import 'basic/typography';
+@import 'basic/utilities';
+
+@import 'elements/button';
+@import 'elements/titles';
+@import 'elements/slider-elements';
+@import 'elements/tab';
+@import 'elements/selectbox';
+@import 'elements/breadcrumb';
+@import 'elements/pagination';
+@import 'elements/comment';
+@import 'elements/calltoaction';
+@import 'elements/form';
+
+@import 'sections/header';
+@import 'sections/nav';
+@import 'sections/heroslider';
+@import 'sections/about';
+@import 'sections/features';
+@import 'sections/pricing';
+@import 'sections/funfact';
+@import 'sections/services';
+@import 'sections/testimonial';
+@import 'sections/product';
+@import 'sections/information';
+@import 'sections/blog';
+@import 'sections/team';
+@import 'sections/faq';
+@import 'sections/widgets';
+@import 'sections/contact';
+@import 'sections/shop';
+@import 'sections/mission-vision';
+@import 'sections/footer';
+
+
+@import 'pages/product-details';
+@import 'pages/cart';
+@import 'pages/checkout';
+@import 'pages/account';

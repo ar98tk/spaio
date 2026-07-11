@@ -1,0 +1,189 @@
+.pricing-card-wrapper {
+    &.style1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+        @include breakpoint (max-md) {
+            grid-template-columns: repeat(1, 1fr);
+		}
+    }
+
+    &.style2 {
+        padding-left: 110px;
+        padding-right: 110px;
+
+        @include breakpoint (max-xl) {
+            padding: 80px;
+        }
+        @include breakpoint (max-md) {
+            padding: 5px;
+        }
+    }
+}
+
+
+.pricing-thumb {
+    &.style1 {
+        .thumb {
+            margin-left: -300px;
+            margin-bottom: -220px;
+
+            @include breakpoint (max-xxl) {
+                margin-left: -350px;
+            }
+
+            @include breakpoint (max-xl) {
+                margin-left: -420px;
+            }
+
+            @include breakpoint (max-lg) {
+                margin-left: 0px;
+                margin-bottom: 0px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+.pricing-card {
+    &.style1 {
+        padding: 40px;
+        background: $white;
+        border: 1px solid $border-color;
+        box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+
+        .pricing-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 35px;
+
+            .title {
+                h4 {
+                    color: $title-color;
+                    font-family: $title-font;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 35.04px;
+                    margin-bottom: 5px;
+                }
+            }
+
+            .price {
+                h2 {
+                    color: $title-color;
+                    font-family: $title-font;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 57.6px;
+
+                    span {
+                        color: $title-color;
+                        font-family: $body-font;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 26.08px;
+                    }
+                }
+            }
+        }
+
+        .checklist {
+            margin-bottom: 35px;
+        }
+    }
+
+    &.style2 {
+        .pricing-header { 
+            display: grid;
+            grid-template-columns: (25% 45% 30%);
+            align-items: center;
+            padding: 20px 40px;
+            gap: 30px;
+
+            @include breakpoint (max-sm) { 
+                padding: 20px 17px;
+                gap: 5px;
+            }
+
+            h6 {
+                color: var(--900, #0D0D0D);
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-family: Marcellus;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 35.04px; 
+            }
+        }
+
+        .pricing-item {
+            display: grid;
+            grid-template-columns: (25% 45% 15% 15%);
+            align-items: center;
+            gap: 30px;
+            padding: 30px 40px;
+            margin-bottom: 30px;
+            background: $white;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            @include breakpoint (max-lg) {
+                padding: 10px;
+                gap: 2px;
+            }
+
+            h4 {
+                color: $title-color; 
+                font-family: $title-font;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 35.04px; 
+
+                @include breakpoint (max-md) {
+                    font-size: 18px;
+                }
+            }
+
+            .text {
+                color: $text-color; 
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26.08px; 
+                max-width: 410px;
+
+                @include breakpoint (max-sm) { 
+                    font-size: 13px; 
+                    line-height: 20.08px; 
+                }
+            }
+
+            .icon {
+                transition: all 0.4s;
+                -webkit-transition: all 0.4s;
+                -moz-transition: all 0.4s;
+                -ms-transition: all 0.4s;
+                -o-transition: all 0.4s;
+            }
+
+            &:hover {
+                .icon {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

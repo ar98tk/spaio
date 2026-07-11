@@ -1,0 +1,240 @@
+/**
+ * Button
+ */
+
+.tm-button,
+a.tm-button,
+button.tm-button {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: $ff-heading;
+    letter-spacing: 1px;
+    background: $color-theme;
+    height: 50px;
+    line-height: 48px;
+    padding: 0 40px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    color: #ffffff;
+    border: 1px solid $color-theme;
+    z-index: 1;
+    vertical-align: middle;
+    border-radius: 3px;
+    white-space: nowrap;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.3);
+        transform-origin: 0 100%;
+        transform: rotate(-90deg) scaleX(1);
+        transition: all 0.4s ease-in-out 0s;
+        opacity: 1;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.3);
+        transform-origin: 100% 0;
+        transform: rotate(-90deg) scaleX(1);
+        transition: all 0.4s ease-in-out 0s;
+        opacity: 1;
+    }
+
+    &:hover {
+        &::before {
+            transform: rotate(0deg) scaleX(1);
+            opacity: 0;
+        }
+
+        &::after {
+            transform: rotate(0deg) scaleX(1);
+            opacity: 0;
+        }
+    }
+
+    &.tm-button-dark {
+        background: #292828;
+        border-color: #292828;
+
+        &::before {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        &::after {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    &.tm-button-white {
+        background: #ffffff;
+        border-color: #ffffff;
+        color: $color-body;
+
+        &::before {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        &::after {
+            background: rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    &.tm-button-sm {
+        font-weight: 500;
+        letter-spacing: 0;
+        font-size: 16px;
+        height: 44px;
+        line-height: 42px;
+        padding: 0 25px;
+    }
+
+    @media #{$layout-mobile-lg} {
+        font-weight: 500;
+        letter-spacing: 0;
+        font-size: 16px;
+        height: 44px;
+        line-height: 42px;
+        padding: 0 25px;
+    }
+}
+
+.tm-buttongroup {
+    margin-left: -10px;
+    margin-top: -10px;
+
+    .tm-button {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+}
+
+/* Read More Button */
+.tm-readmore,
+a.tm-readmore,
+button.tm-readmore {
+    display: inline-block;
+    color: $color-theme;
+    font-weight: 500;
+    font-family: $ff-heading;
+    font-size: 18px;
+
+    &:hover {
+        color: $color-theme;
+    }
+}
+
+
+/* Video Button */
+.tm-videobutton,
+a.tm-videobutton,
+button.tm-videobutton {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+
+    a {
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 999px;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 100%;
+        width: 100%;
+        margin-left: -35px;
+        margin-top: -35px;
+        border-radius: 999px;
+    }
+
+    &::before {
+        background: rgba(#ffffff, 0.5);
+        z-index: -1;
+        animation: tmGrowShrink 1.2s ease-in-out 0s infinite both;
+    }
+
+    &::after {
+        background: rgba($color-theme, 0.5);
+        z-index: -2;
+        animation: tmGrowShrink 1.2s ease-in-out 0.3s infinite both;
+    }
+
+    span {
+        display: inline-block;
+        height: 70px;
+        width: 70px;
+        line-height: 1;
+        text-align: center;
+        background: $color-theme;
+        border-radius: 999px;
+        color: #ffffff;
+        transition: all 0.3s ease-in-out 0s;
+
+        i {
+            font-size: 58px;
+            line-height: 56px;
+        }
+    }
+
+    &:hover {
+        span {
+            background: $color-theme;
+            color: #ffffff;
+        }
+    }
+}
+
+
+
+/* Callbutton */
+.tm-callbutton {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+
+    &-icon {
+        font-size: 30px;
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        line-height: 1;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 100px;
+        background: #ffffff;
+        padding: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        margin-right: 10px;
+
+        i {
+            background: $color-theme;
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            border-radius: 100px;
+            line-height: 42px;
+            animation: bounceIn 1.5s ease-in-out 1s infinite both;
+        }
+    }
+
+    h3 {
+        font-weight: 700;
+        color: $color-theme;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,123 @@
+/*-----------------------------------------------------------------
+Theme Name: Reluxe
+Author: Mugli
+Author URI: https://themeforest.net/user/mugli 
+Version: 1.0.0 
+Description: Reluxe - Beauty spa, Barber Shop & Cosmetic Surgery Html Template  <
+ 
+-------------------------------------------------------------------
+ CSS TABLE OF CONTENTS
+-------------------------------------------------------------------
+
+01.Mixins
+02.Variables
+03.Typography
+04.Buttons 
+05.Gutter 
+06.Container 
+07.Animation 
+08.Helping 
+09.MeanMenu 
+10.Preloader
+11.Title 
+12.Common 
+13.Header 
+14.Breadcumb 
+15.Footer 
+16.Appointment
+17.Services
+18.Team
+19.Project 
+20.Wcu
+21.Pricing 
+22.Intro 
+23.Cta
+24.About
+25.Features
+26.Gallery
+27.Testimonial
+28.Subscribe
+29.Faq
+30.Contact
+31.Blog
+32.Blog Extra
+33.Sidebar
+
+------------------------------------------------------------------*/
+
+
+//>> Basic Start <<//
+
+/* 01.Mixins */
+@import "_mixins";
+/* 02.Variables */
+@import "_variables";
+/* 03.Typography */
+@import "_typography";
+/* 04.Buttons */
+@import "_buttons";
+/* 05.Gutter */
+@import "_gutter";
+/* 06.Container */
+@import "_container";
+/* 07.Animation */
+@import "_animation"; 
+/* 08.Helping */
+@import "_helping"; 
+/* 09.MeanMenu */
+@import "_meanmenu";
+/* 10.Preloader */
+@import "_preloader";
+//>> Basic End <<//	
+
+
+//>> Template Section Style Start <<//  
+
+/* 11.Title */
+@import "_title";
+/* 12.Common */
+@import "_common";
+/* 13.Header */
+@import "_header";
+/* 14.Breadcumb */
+@import "_breadcumb";
+/* 15.Footer */
+@import "_footer";   
+/* 16.Appointment */
+@import "_appointment";   
+/* 17.Services */
+@import "_services";  
+/* 18.Team */
+@import "_team";  
+/* 19.Project */
+@import "_project";  
+/* 20.Wcu */
+@import "_wcu";  
+/* 21.Pricing */
+@import "_pricing";  
+/* 22.Intro */
+@import "_intro";
+/* 23.Cta */
+@import "_cta";    
+/* 24.About */
+@import "_about";  
+/* 25.Features */
+@import "_features";  
+/* 26.Gallery */
+@import "_gallery"; 
+/* 27.Testimonial */
+@import "_testimonial";  
+/* 28.Subscribe */
+@import "_subscribe";  
+/* 29.Faq */
+@import "_faq";  
+/* 30.Contact */
+@import "_contact";  
+/* 31.Blog */
+@import "_blog";
+/* 32.Blog Extra */
+@import "_blog-extra";
+/* 33.Sidebar */
+@import "_sidebar"; 
+//>> Template Section Style End <<//
+

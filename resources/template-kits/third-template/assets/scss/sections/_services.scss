@@ -1,0 +1,133 @@
+/**
+ * Service
+ */
+
+.services-area {
+    position: relative;
+}
+
+.tm-service {
+    padding: 15px 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s ease-out 0s;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: auto;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background: $color-theme;
+        transition: all 0.4s ease-out 0s;
+    }
+
+    &-icon {
+        display: inline-block;
+        height: 66px;
+        font-size: 60px;
+        line-height: 1;
+        vertical-align: middle;
+        color: $color-theme;
+        opacity: 1;
+        position: relative;
+        z-index: -1;
+        transition: all 0.4s ease-out 0s;
+
+        i {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    &-backicon {
+        position: absolute;
+        left: auto;
+        right: -30px;
+        top: auto;
+        bottom: -30px;
+        font-size: 160px;
+        color: rgba(#333333, 0.05);
+        z-index: -1;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.4s ease-out 0s;
+    }
+
+    h5 {
+        margin-top: 20px;
+        transition: all 0.4s ease-out 0s;
+
+        a {
+            color: $color-heading;
+
+            &:hover {
+                color: $color-theme;
+            }
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .tm-readmore {
+        margin-top: 0;
+        height: 0;
+        line-height: 1;
+        opacity: 0;
+        transition: all 0.4s ease-out 0s;
+    }
+
+    &:hover {
+        background: rgba($color-theme, 0.1);
+    }
+
+    &:hover &-icon {
+        height: 0;
+        opacity: 0;
+    }
+
+    &:hover h5 {
+        margin-top: 0;
+    }
+
+    &:hover .tm-readmore {
+        margin-top: 30px;
+        height: 28px;
+        line-height: 0;
+        opacity: 1;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+
+    &:hover &-backicon {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+/* Service Details */
+.tm-service-details {
+    h2 {
+        font-weight: 700;
+    }
+
+    &-image {
+        margin-bottom: 25px;
+    }
+
+    blockquote {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}

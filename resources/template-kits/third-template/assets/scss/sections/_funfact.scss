@@ -1,0 +1,193 @@
+/**
+ * Funfact
+ */
+
+.tm-funfact {
+    min-width: 200px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &-icon {
+        font-size: 50px;
+        margin-top: -4px;
+        color: $color-theme;
+        display: inline-block;
+        vertical-align: middle;
+
+        i {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 1;
+        }
+    }
+
+    &-content {
+        background: #ffffff;
+        padding: 26px 15px;
+        border-radius: 25px;
+        position: relative;
+        margin-top: 40px;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 43%;
+            top: -9px;
+            height: 22px;
+            width: 26px;
+            background: #ffffff;
+            transform: rotate(60deg) skew(30deg);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+            z-index: -2;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 25px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+            z-index: -3;
+        }
+
+        .odometer {
+            margin-bottom: 5px;
+            font-weight: 700;
+            font-family: $ff-heading;
+            font-size: $fz-heading-2;
+            color: $color-theme;
+
+            .odometer-formatting-mark {
+                display: none;
+            }
+        }
+
+        h5 {
+            color: $color-body;
+            margin-bottom: 0;
+            font-weight: 400;
+        }
+    }
+
+    &-contentbg {
+        position: absolute;
+        background: #ffffff;
+        border-radius: 25px;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+
+    @media #{$layout-notebook} {
+        &-content {
+            h5 {
+                font-size: 16px;
+            }
+        }
+    }
+
+    @media #{$layout-tablet} {
+        .tm-funfact {
+            &-content {
+                .odometer {
+                    font-size: $fz-heading-2 - 4;
+                    line-height: $lh-heading-2 - 4;
+                }
+            }
+        }
+    }
+
+    @media #{$layout-mobile-lg} {
+        .tm-funfact {
+            &-content {
+                .odometer {
+                    font-size: $fz-heading-2 - 6;
+                    line-height: $lh-heading-2 - 6;
+                }
+            }
+        }
+    }
+
+    @media #{$layout-mobile-sm} {
+        justify-content: flex-start;
+    }
+
+    @media #{$layout-mobile-xs} {
+        margin-left: 0;
+    }
+}
+
+/* Funfact 2 */
+.funfact-headline {
+    margin-top: -7px;
+
+    h4 {
+        color: #ffffff;
+        margin-bottom: 0;
+        font-weight: 400;
+    }
+
+    h2 {
+        font-size: 40px;
+        color: #ffffff;
+        font-weight: 700;
+        margin-bottom: 0;
+
+        span {
+            color: $color-theme;
+        }
+    }
+}
+
+@media #{$layout-notebook} {
+    .funfact-wrapper {
+        margin-top: 0;
+
+        .tm-funfact {
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media #{$layout-tablet} {
+    .funfact-headline {
+        h2 {
+            font-size: 34px;
+            line-height: 34px;
+        }
+    }
+
+    .funfact-wrapper {
+        margin-top: 0;
+
+        .tm-funfact {
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media #{$layout-mobile-lg} {
+    .funfact-headline {
+        h2 {
+            font-size: 30px;
+            line-height: 30px;
+        }
+    }
+
+    .funfact-wrapper {
+        margin-top: 0;
+
+        .tm-funfact {
+            justify-content: flex-start;
+        }
+    }
+}

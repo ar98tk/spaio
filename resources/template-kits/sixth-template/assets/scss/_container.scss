@@ -1,0 +1,43 @@
+/*----------------------------------------------
+    # Container  style here
+----------------------------------------------*/
+@media (min-width:1400px) { 
+    .causes-wrapper{
+        &.style1{
+            .container{
+                max-width: 1352px;
+            }
+        }
+    }
+
+    .header-section-2 {
+        .container {
+            max-width: 1585px;
+            margin-left: 20px; 
+            margin-right: auto;
+
+            @include breakpoint (max-xl4) {
+                margin-left: auto;
+            }
+        } 
+    }
+
+}
+
+
+@media (min-width:2000px) {   
+    .header-section-2 {
+        .container {
+            max-width: 100%;
+            margin-left: auto; 
+            .mega-menu-wrapper { 
+                padding-right: 225px;
+
+            }
+            @include breakpoint (max-xl4) {
+                margin-right: auto;
+            }
+        } 
+    }
+
+}

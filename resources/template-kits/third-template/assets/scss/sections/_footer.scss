@@ -1,0 +1,124 @@
+/**
+ * Footer
+ */
+
+.footer {
+
+    &-toparea {
+        background: #151515;
+    }
+
+    &-bottomarea {
+        padding: 25px 0;
+        background: $color-dark;
+    }
+
+    &-copyright {
+        margin-bottom: 0;
+        color: #ffffff;
+        text-align: center;
+
+        a {
+            font-weight: 500;
+            color: #ffffff;
+
+            &:hover {
+                color: $color-theme;
+            }
+        }
+    }
+}
+
+.footer-widgets {
+    margin-top: -50px;
+
+    .single-widget {
+        color: #ebebeb;
+        margin-top: 50px;
+
+        a {
+            color: #ebebeb;
+
+            &:hover {
+                color: $color-theme;
+            }
+        }
+    }
+
+    .widget-title {
+        color: #ffffff;
+        padding-bottom: 0;
+        margin-bottom: 25px;
+
+        &:after {
+            display: none;
+        }
+    }
+
+    .widget-recentpost {
+        ul {
+            padding-top: 6px;
+
+            li:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &-image {
+            flex: 0 0 60px;
+            max-width: 60px;
+        }
+
+        &-content {
+            h6 {
+                color: #ffffff;
+                font-size: 14px;
+
+                a {
+                    color: #ffffff;
+
+                    &:hover {
+                        color: $color-theme;
+                    }
+                }
+            }
+
+            span {
+                color: #d2d2d2;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .widget-newsletter {
+        &-form {
+            padding-top: 10px;
+            display: flex;
+
+            input[type="text"],
+            input[type="email"] {
+                @include placeholder-color(#ffffff);
+                color: #ffffff;
+
+                &:focus {
+                    border-color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .widget-contact {
+        ul:not(.widget-contact-social) {
+            li {
+    
+                a {
+                    color: #ebebeb;
+    
+                    &:hover {
+                        color: $color-theme;
+                    }
+                }
+            }
+        }
+    }
+}

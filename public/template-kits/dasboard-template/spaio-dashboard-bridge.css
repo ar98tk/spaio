@@ -1,0 +1,271 @@
+body.spaio-dashboard-template-body {
+    background: #f6f8fb;
+}
+
+.spaio-dashboard-template .nav-header {
+    background: #ffffff;
+    border-right: 1px solid rgba(213, 217, 224, 0.75);
+}
+
+.spaio-dashboard-template .nav-header .brand-logo {
+    gap: 10px;
+    padding-left: 24px;
+}
+
+.spaio-logo-abbr {
+    display: grid;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+    border: 1px solid rgba(13, 148, 136, 0.18);
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: rgba(25, 55, 101, 0.06) 0 8px 18px;
+}
+
+.spaio-logo-abbr img {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+}
+
+.spaio-brand-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #193765;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.spaio-brand-title img {
+    display: none;
+}
+
+.spaio-dashboard-template .header {
+    border-bottom: 1px solid rgba(213, 217, 224, 0.7);
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: rgba(25, 55, 101, 0.05) 0 10px 28px;
+}
+
+.spaio-dashboard-template .dashboard_bar {
+    color: #193765;
+    font-weight: 800;
+}
+
+.spaio-dashboard-eyebrow {
+    margin-top: 2px;
+    color: #0d9488;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.spaio-dashboard-template .deznav {
+    background: #ffffff;
+    border-right: 1px solid rgba(213, 217, 224, 0.75);
+}
+
+.spaio-tenant-card {
+    margin: 18px 18px 14px;
+    padding: 18px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #193765 0%, #0f766e 100%);
+    color: #ffffff;
+    box-shadow: rgba(13, 148, 136, 0.18) 0 14px 30px;
+}
+
+.spaio-tenant-card span,
+.spaio-tenant-card strong,
+.spaio-tenant-card small {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.spaio-tenant-card span {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.spaio-tenant-card strong {
+    margin-top: 9px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.spaio-tenant-card small {
+    margin-top: 4px;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 12px;
+}
+
+.spaio-dashboard-template .deznav .metismenu > li > a {
+    font-weight: 700;
+}
+
+.spaio-dashboard-template .deznav .metismenu > li.mm-active > a,
+.spaio-dashboard-template .deznav .metismenu > li > a:hover {
+    color: #0d9488;
+}
+
+.spaio-dashboard-template .deznav .metismenu > li.mm-active > a::before {
+    background: #0d9488;
+}
+
+.spaio-nav-svg {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    stroke-width: 2.2;
+}
+
+.spaio-header-avatar {
+    display: grid;
+    width: 38px;
+    height: 38px;
+    place-items: center;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #193765, #0d9488);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.spaio-dashboard-template .header-profile .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.spaio-dashboard-template .header-profile .header-info {
+    display: grid;
+    text-align: left;
+}
+
+.spaio-dashboard-template .content-body .container-fluid {
+    padding-top: 28px;
+}
+
+.spaio-dashboard-template .card {
+    border: 1px solid rgba(213, 217, 224, 0.75);
+    box-shadow: rgba(25, 55, 101, 0.05) 0 8px 28px;
+}
+
+.spaio-dashboard-template .spaio-page-header {
+    overflow: hidden;
+}
+
+.spaio-dashboard-template .spaio-page-header__header {
+    display: grid;
+    align-items: end;
+    border-bottom: 1px solid rgba(213, 217, 224, 0.72);
+    background:
+        radial-gradient(circle at 90% 8%, rgba(13, 148, 136, 0.13), transparent 32%),
+        linear-gradient(135deg, #ffffff 0%, #f8fafc 56%, #f0fdfa 100%);
+}
+
+.spaio-dashboard-template .spaio-page-header__eyebrow {
+    color: #0d9488 !important;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.spaio-dashboard-template .spaio-page-header .card-title {
+    color: #193765;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.spaio-dashboard-template .btn-primary {
+    background-color: #0d9488;
+    border-color: #0d9488;
+}
+
+.spaio-dashboard-template .btn-primary:hover,
+.spaio-dashboard-template .btn-primary:focus {
+    background-color: #0f766e;
+    border-color: #0f766e;
+}
+
+.spaio-dashboard-template .btn-primary.light {
+    background: #f0fdfa;
+    color: #0f766e;
+}
+
+.spaio-dashboard-template .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 700;
+}
+
+.spaio-dashboard-template .btn-outline-primary {
+    border-color: #0d9488;
+    color: #0d9488;
+}
+
+.spaio-dashboard-template .btn-outline-primary:hover,
+.spaio-dashboard-template .btn-outline-primary:focus {
+    background: #0d9488;
+    border-color: #0d9488;
+    color: #ffffff;
+}
+
+.spaio-dashboard-template .form-label {
+    color: #193765;
+    font-weight: 700;
+}
+
+.spaio-dashboard-template .form-control,
+.spaio-dashboard-template .form-select {
+    border-color: rgba(213, 217, 224, 0.95);
+}
+
+.spaio-dashboard-template .form-control:focus,
+.spaio-dashboard-template .form-select:focus {
+    border-color: #0d9488;
+    box-shadow: rgba(13, 148, 136, 0.12) 0 0 0 3px;
+}
+
+.spaio-dashboard-template .object-fit-cover {
+    object-fit: cover;
+}
+
+.spaio-dashboard-template .object-fit-contain {
+    object-fit: contain;
+}
+
+.spaio-dashboard-template .place-items-center {
+    place-items: center;
+}
+
+.spaio-dashboard-template .border-dashed {
+    border-style: dashed !important;
+}
+
+.spaio-react-modal {
+    background: rgba(15, 23, 42, 0.48);
+}
+
+.spaio-react-modal__backdrop {
+    position: fixed;
+    inset: 0;
+    border: 0;
+    background: transparent;
+}
+
+.spaio-react-modal .modal-dialog {
+    z-index: 2;
+}

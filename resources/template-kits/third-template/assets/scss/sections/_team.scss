@@ -1,0 +1,112 @@
+/**
+ * Team Member
+ */
+
+.tm-member {
+    &-top {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+
+        ul {
+            padding-left: 0;
+            margin-bottom: 0;
+            position: absolute;
+            top: auto;
+            bottom: 20px;
+            left: 0;
+            background: $color-theme;
+            border-radius: 0 50px 50px 0;
+            padding: 13px 15px;
+            padding-right: 25px;
+            transform: translateX(-100%);
+            transition: all 0.4s ease-in-out 0.1s;
+
+            li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 8px;
+
+                a {
+                    font-size: 16px;
+                    color: #ffffff;
+
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+    &-bottom {
+        text-align: center;
+        position: relative;
+        padding: 20px 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: auto;
+            bottom: 0;
+            height: 1px;
+            width: 0;
+            background: $color-theme;
+            transition: all 0.4s ease-in-out 0s;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: auto;
+            right: 0;
+            top: auto;
+            bottom: 0;
+            height: 1px;
+            width: 100%;
+            background: $color-border;
+            transition: all 0.4s ease-in-out 0s;
+        }
+
+        h6 {
+            margin-bottom: 5px;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        h5 {
+            margin-bottom: 0;
+        }
+    }
+
+    &:hover &-top {
+        ul {
+            transform: translateX(0);
+        }
+    }
+
+    &:hover &-bottom {
+        &::before {
+            width: 100%;
+        }
+
+        &::after {
+            width: 0;
+        }
+    }
+}
+
+
+.team-slider-activation {
+    @media #{$layout-mobile-lg} {
+
+        .tm-slider-arrow-prev,
+        .tm-slider-arrow-next {
+            display: none !important;
+        }
+    }
+}

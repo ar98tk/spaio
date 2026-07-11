@@ -1,0 +1,138 @@
+
+
+.cta-wrapper {
+    &.style1 { 
+        .cta {
+            padding: 60px 60px;
+            background: $theme-color;
+
+            h1 { 
+                color: $white; 
+                font-family: $title-font;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 57.6px;  
+            }
+
+            .schedule {
+                h4 { 
+                    color: $white; 
+                    font-family: $title-font;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 35.04px; 
+                }
+
+                h3 {
+                    color: $white; 
+                    font-family: $title-font;
+                    font-size: 26px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 31.2px;  
+                }
+            }
+        }
+    }
+
+    &.style2 {
+        position: relative;
+        z-index: 5;
+        background: $theme-color;
+        margin-bottom: -140px;
+
+        @include breakpoint (max-md) {
+            margin-bottom: -105px;
+        }
+
+        .cta-thumb {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            .icon {
+                position: absolute;
+                top: 50%;
+                right: 0px;
+                z-index: 3;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+
+                @include breakpoint (max-xl) {
+                    top: 50%;
+                    right: 40%;
+                    transform: translate(-40%, -50%);
+                    -webkit-transform: translate(-40%, -50%);
+                    -moz-transform: translate(-40%, -50%);
+                    -ms-transform: translate(-40%, -50%);
+                    -o-transform: translate(-40%, -50%);
+}
+@include breakpoint (max-md) {
+    top: 50%;
+    right: 35%;
+    transform: translate(-35%, -50%);
+    -webkit-transform: translate(-35%, -50%);
+    -moz-transform: translate(-35%, -50%);
+    -ms-transform: translate(-35%, -50%);
+    -o-transform: translate(-35%, -50%);
+}
+}
+            
+        }
+
+        .cta-content {
+            padding: 75px 0 68px;
+            @include breakpoint (max-md) {
+                padding: 20px 20px 40px;
+            }
+            h4 {
+                color: $white; 
+                font-family: $title-font;
+                font-size: 31.118px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 37.342px;  
+                @include breakpoint (max-md) {
+                    margin-bottom: 10px;
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+            }
+
+            h2 {
+                color: $white; 
+                font-family: $title-font;
+                font-size: 57.449px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 68.939px;
+                margin-bottom: 30px;
+                @include breakpoint (max-md) { 
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+            }
+
+            .theme-btn {
+                width: 260px;
+                color: $white; 
+                font-family: $body-font;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 14px; 
+                letter-spacing: 3.08px;
+                text-transform: uppercase;
+                border: 1px solid $white;
+            }
+        }
+    }
+}

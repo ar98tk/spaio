@@ -1,0 +1,36 @@
+.contact-content {
+    &.style1 {
+        position: relative;
+        padding: 160px 40px 109px;
+        background: $white; 
+        box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+
+        @include breakpoint (max-md) { 
+            padding: 50px 20px 50px; 
+        }
+
+        .shape1 {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .fancy-box-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin: 30px 0;
+            @include breakpoint (max-md) { 
+                flex-direction: column;
+                align-items: start;
+            }
+        }
+    }
+}
+
+.contact-form {
+    &.style1 {
+        padding: 40px;
+        background: $theme-color-2;
+    }
+}

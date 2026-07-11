@@ -1,0 +1,1085 @@
+.third-template-site {
+    --tt-blue: #0075b7;
+    --tt-blue-dark: #005f96;
+    --tt-navy: #102a43;
+    --tt-text: #637489;
+    --tt-muted: #8b9bad;
+    --tt-soft: #eef7fb;
+    --tt-soft-2: #f6fafd;
+    --tt-border: #dce8f0;
+    --tt-white: #ffffff;
+    min-height: 100vh;
+    background: var(--tt-white);
+    color: var(--tt-text);
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+.third-template-site * {
+    box-sizing: border-box;
+}
+
+.third-template-site a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.third-template-site button,
+.third-template-site input,
+.third-template-site textarea {
+    font: inherit;
+}
+
+.tt-shell {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+.tt-topbar {
+    background: var(--tt-blue);
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.tt-topbar__inner,
+.tt-topbar__inner > div,
+.tt-topbar__inner a,
+.tt-topbar__inner span,
+.tt-nav,
+.tt-brand,
+.tt-nav-links,
+.tt-hero__actions,
+.tt-hero__stats,
+.tt-feature-strip,
+.tt-card-actions,
+.tt-price-row,
+.tt-contact-list a,
+.tt-contact-list span,
+.tt-socials a,
+.tt-alert,
+.tt-button {
+    display: flex;
+    align-items: center;
+}
+
+.tt-topbar__inner {
+    min-height: 44px;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.tt-topbar__inner > div {
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tt-topbar__inner a,
+.tt-topbar__inner span {
+    gap: 8px;
+}
+
+.tt-topbar__cta {
+    min-height: 34px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    padding: 0 16px;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.tt-header {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 18px 46px rgba(16, 42, 67, 0.08);
+    backdrop-filter: blur(18px);
+}
+
+.tt-nav {
+    min-height: 88px;
+    justify-content: space-between;
+    gap: 26px;
+}
+
+.tt-brand {
+    gap: 14px;
+    color: var(--tt-navy);
+}
+
+.tt-brand img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: contain;
+    background: var(--tt-white);
+    box-shadow: 0 12px 30px rgba(0, 117, 183, 0.13);
+}
+
+.tt-brand strong {
+    display: block;
+    color: var(--tt-navy);
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.tt-brand small {
+    display: block;
+    margin-top: 5px;
+    color: var(--tt-blue);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.tt-nav-links {
+    gap: 6px;
+}
+
+.tt-nav-links a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0 13px;
+    color: var(--tt-navy);
+    font-size: 14px;
+    font-weight: 800;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.tt-nav-links a:hover {
+    background: var(--tt-soft);
+    color: var(--tt-blue);
+}
+
+.tt-nav-links .tt-nav-button {
+    margin-left: 8px;
+    background: var(--tt-blue);
+    color: var(--tt-white);
+}
+
+.tt-nav-links .tt-nav-button:hover {
+    background: var(--tt-blue-dark);
+    color: var(--tt-white);
+}
+
+.tt-menu-button {
+    display: none;
+    width: 48px;
+    height: 48px;
+    place-items: center;
+    border: 1px solid var(--tt-border);
+    border-radius: 8px;
+    background: var(--tt-white);
+    color: var(--tt-blue);
+}
+
+.tt-hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(110deg, rgba(246, 250, 253, 0.98), rgba(238, 247, 251, 0.92)), var(--tt-hero-bg) center/cover;
+}
+
+.tt-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 15% 20%, rgba(0, 117, 183, 0.12), transparent 30%);
+    pointer-events: none;
+}
+
+.tt-hero__grid {
+    position: relative;
+    z-index: 1;
+    min-height: 740px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 470px;
+    align-items: center;
+    gap: 58px;
+    padding: 78px 0;
+}
+
+.tt-kicker {
+    margin: 0;
+    color: var(--tt-blue);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.tt-hero h1,
+.tt-section-title h2,
+.tt-about__content h2,
+.tt-contact h2,
+.tt-booking__panel h2 {
+    font-family: "Poppins", sans-serif;
+    color: var(--tt-navy);
+}
+
+.tt-hero h1 {
+    max-width: 760px;
+    margin: 16px 0 0;
+    font-size: clamp(48px, 6vw, 78px);
+    font-weight: 800;
+    line-height: 1.03;
+}
+
+.tt-hero__content > p:not(.tt-kicker) {
+    max-width: 650px;
+    margin: 22px 0 0;
+    color: var(--tt-text);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+.tt-hero__actions {
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.tt-button {
+    min-height: 50px;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 0 24px;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease, color 0.22s ease;
+}
+
+.tt-button:hover,
+.tt-button:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 36px rgba(0, 117, 183, 0.16);
+    outline: none;
+}
+
+.tt-button--primary {
+    background: var(--tt-blue);
+    color: var(--tt-white);
+}
+
+.tt-button--primary:hover {
+    background: var(--tt-blue-dark);
+}
+
+.tt-button--secondary {
+    background: var(--tt-white);
+    border-color: var(--tt-border);
+    color: var(--tt-navy);
+}
+
+.tt-hero__stats {
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.tt-hero__stats span {
+    border-radius: 999px;
+    border: 1px solid var(--tt-border);
+    background: rgba(255, 255, 255, 0.78);
+    padding: 9px 14px;
+    color: var(--tt-text);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.tt-hero__stats strong {
+    color: var(--tt-blue);
+}
+
+.tt-hero__visual {
+    position: relative;
+    min-height: 560px;
+}
+
+.tt-hero__visual img {
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+    border-radius: 42% 58% 45% 55% / 48% 38% 62% 52%;
+    box-shadow: 0 32px 70px rgba(16, 42, 67, 0.2);
+}
+
+.tt-hero-card {
+    position: absolute;
+    right: -18px;
+    bottom: 54px;
+    width: 270px;
+    border-radius: 16px;
+    border: 1px solid rgba(220, 232, 240, 0.86);
+    background: rgba(255, 255, 255, 0.94);
+    padding: 22px;
+    box-shadow: 0 22px 52px rgba(16, 42, 67, 0.15);
+    backdrop-filter: blur(14px);
+}
+
+.tt-hero-card span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--tt-blue);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.tt-hero-card strong {
+    display: block;
+    margin-top: 12px;
+    color: var(--tt-navy);
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+}
+
+.tt-hero-card p {
+    margin: 8px 0 0;
+    color: var(--tt-text);
+    line-height: 1.6;
+}
+
+.tt-section {
+    padding: 92px 0;
+    background: var(--tt-white);
+}
+
+.tt-section--soft,
+.tt-section--blue {
+    background: var(--tt-soft-2);
+}
+
+.tt-section-title {
+    max-width: 720px;
+    margin-bottom: 42px;
+}
+
+.tt-section-title--center {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.tt-section-title p {
+    margin: 0 0 12px;
+    color: var(--tt-blue);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.19em;
+    text-transform: uppercase;
+}
+
+.tt-section-title h2 {
+    margin: 0;
+    font-size: clamp(34px, 4vw, 50px);
+    font-weight: 800;
+    line-height: 1.12;
+}
+
+.tt-section-title span {
+    display: block;
+    margin-top: 16px;
+    color: var(--tt-text);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.tt-about {
+    background: linear-gradient(90deg, var(--tt-soft-2) 0 48%, var(--tt-white) 48% 100%);
+}
+
+.tt-about__grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    align-items: center;
+    gap: 58px;
+}
+
+.tt-about__image {
+    min-height: 520px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 24px 60px rgba(16, 42, 67, 0.14);
+}
+
+.tt-about__image img {
+    width: 100%;
+    height: 100%;
+    min-height: 520px;
+    object-fit: cover;
+}
+
+.tt-feature-strip {
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+}
+
+.tt-feature-strip span {
+    gap: 9px;
+    border-radius: 999px;
+    border: 1px solid var(--tt-border);
+    background: var(--tt-white);
+    padding: 10px 14px;
+    color: var(--tt-navy);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.tt-service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.tt-service-card,
+.tt-package-card,
+.tt-staff-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--tt-border);
+    border-radius: 16px;
+    background: var(--tt-white);
+    box-shadow: 0 8px 34px rgba(16, 42, 67, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.tt-service-card:hover,
+.tt-package-card:hover,
+.tt-staff-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(0, 117, 183, 0.32);
+    box-shadow: 0 18px 44px rgba(16, 42, 67, 0.12);
+}
+
+.tt-service-card__icon {
+    position: absolute;
+    top: 172px;
+    left: 24px;
+    z-index: 2;
+    display: grid;
+    width: 58px;
+    height: 58px;
+    place-items: center;
+    border-radius: 999px;
+    background: var(--tt-blue);
+    color: var(--tt-white);
+    box-shadow: 0 14px 26px rgba(0, 117, 183, 0.26);
+}
+
+.tt-service-card img {
+    width: 100%;
+    height: 202px;
+    object-fit: cover;
+}
+
+.tt-service-card > div:last-child,
+.tt-package-card > div,
+.tt-staff-card > div {
+    padding: 36px 24px 24px;
+}
+
+.tt-service-card h3,
+.tt-package-card h3,
+.tt-staff-card h3 {
+    margin: 0;
+    color: var(--tt-navy);
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.tt-service-card p,
+.tt-staff-card p,
+.tt-package-card li,
+.tt-contact p {
+    color: var(--tt-text);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.tt-service-card p {
+    min-height: 76px;
+    margin: 12px 0 0;
+}
+
+.tt-service-card strong {
+    display: block;
+    margin: 18px 0;
+    color: var(--tt-blue);
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+}
+
+.tt-card-actions {
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.tt-card-actions a {
+    min-height: 36px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    border-radius: 999px;
+    border: 1px solid var(--tt-border);
+    padding: 0 12px;
+    color: var(--tt-navy);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.tt-card-actions a:hover {
+    border-color: var(--tt-blue);
+    color: var(--tt-blue);
+}
+
+.tt-package-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.tt-package-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.tt-package-card .tt-kicker {
+    margin-bottom: 10px;
+    font-size: 11px;
+}
+
+.tt-package-card ul {
+    display: grid;
+    gap: 10px;
+    margin: 16px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tt-package-card li {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+}
+
+.tt-package-card li svg {
+    flex: 0 0 auto;
+    margin-top: 4px;
+    color: var(--tt-blue);
+}
+
+.tt-price-row {
+    justify-content: space-between;
+    gap: 12px;
+    margin: 22px 0;
+}
+
+.tt-price-row span {
+    color: var(--tt-muted);
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration: line-through;
+}
+
+.tt-price-row strong {
+    color: var(--tt-blue);
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+}
+
+.tt-staff-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.tt-staff-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.tt-staff-card > div {
+    padding-top: 22px;
+}
+
+.tt-staff-card span {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--tt-blue);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.tt-staff-card p {
+    margin: 12px 0 0;
+}
+
+.tt-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-auto-rows: 240px;
+    gap: 16px;
+}
+
+.tt-gallery-grid figure {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    border-radius: 10px;
+    background: var(--tt-navy);
+}
+
+.tt-gallery-grid figure.is-wide {
+    grid-column: span 2;
+}
+
+.tt-gallery-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.45s ease;
+}
+
+.tt-gallery-grid figure:hover img {
+    transform: scale(1.06);
+}
+
+.tt-gallery-grid figcaption {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.92);
+    padding: 10px 12px;
+    color: var(--tt-navy);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.tt-contact-section {
+    background: var(--tt-navy);
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.tt-contact {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 420px;
+    gap: 48px;
+    align-items: start;
+}
+
+.tt-contact h2 {
+    max-width: 660px;
+    margin: 12px 0 0;
+    color: var(--tt-white);
+    font-size: clamp(36px, 4vw, 56px);
+    font-weight: 800;
+    line-height: 1.08;
+}
+
+.tt-contact p {
+    max-width: 620px;
+    margin: 18px 0 0;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 17px;
+}
+
+.tt-contact aside {
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.06);
+    padding: 24px;
+}
+
+.tt-contact-list {
+    display: grid;
+    gap: 12px;
+}
+
+.tt-contact-list a,
+.tt-contact-list span {
+    gap: 10px;
+    min-height: 46px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 10px 13px;
+    color: var(--tt-white);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.tt-contact-list svg {
+    color: #64c4ec;
+    flex: 0 0 auto;
+}
+
+.tt-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.tt-socials a,
+.tt-socials span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    padding: 9px 12px;
+    color: var(--tt-white);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.tt-footer {
+    background: #0b1c2d;
+    color: rgba(255, 255, 255, 0.72);
+    padding: 26px 0;
+}
+
+.tt-footer .tt-shell {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.tt-footer strong {
+    color: var(--tt-white);
+    font-family: "Poppins", sans-serif;
+}
+
+.tt-empty {
+    margin: 28px 0 0;
+    border-radius: 12px;
+    border: 1px dashed var(--tt-border);
+    padding: 24px;
+    text-align: center;
+    color: var(--tt-text);
+    font-weight: 700;
+}
+
+.tt-alert {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 70;
+    max-width: min(420px, calc(100vw - 44px));
+    gap: 12px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 117, 183, 0.18);
+    background: var(--tt-white);
+    padding: 15px 16px;
+    color: var(--tt-navy);
+    box-shadow: 0 22px 50px rgba(16, 42, 67, 0.18);
+}
+
+.tt-alert svg {
+    color: var(--tt-blue);
+    flex: 0 0 auto;
+}
+
+.tt-alert span {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.45;
+}
+
+.tt-alert button {
+    display: grid;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    place-items: center;
+    border: 0;
+    border-radius: 999px;
+    background: var(--tt-soft);
+    color: var(--tt-navy);
+    cursor: pointer;
+}
+
+.tt-booking {
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    display: grid;
+    place-items: center;
+    padding: 22px;
+}
+
+.tt-booking__backdrop {
+    position: absolute;
+    inset: 0;
+    border: 0;
+    background: rgba(16, 42, 67, 0.68);
+}
+
+.tt-booking__panel {
+    position: relative;
+    z-index: 1;
+    width: min(620px, 100%);
+    max-height: calc(100vh - 44px);
+    overflow: auto;
+    border-radius: 16px;
+    background: var(--tt-white);
+    padding: 30px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.24);
+}
+
+.tt-booking__close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    display: grid;
+    width: 36px;
+    height: 36px;
+    place-items: center;
+    border: 0;
+    border-radius: 999px;
+    background: var(--tt-soft);
+    color: var(--tt-navy);
+    cursor: pointer;
+}
+
+.tt-booking__panel h2 {
+    margin: 10px 42px 0 0;
+    font-size: 30px;
+}
+
+.tt-booking__panel > strong {
+    display: block;
+    margin-top: 8px;
+    color: var(--tt-blue);
+    font-size: 20px;
+}
+
+.tt-booking__fields {
+    display: grid;
+    gap: 14px;
+    margin-top: 24px;
+}
+
+.tt-booking__row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.tt-booking label {
+    display: grid;
+    gap: 8px;
+}
+
+.tt-booking label span {
+    color: var(--tt-navy);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.tt-booking input,
+.tt-booking textarea {
+    width: 100%;
+    border: 1px solid var(--tt-border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    color: var(--tt-navy);
+    outline: none;
+}
+
+.tt-booking textarea {
+    min-height: 96px;
+    resize: vertical;
+}
+
+.tt-booking input:focus,
+.tt-booking textarea:focus {
+    border-color: var(--tt-blue);
+    box-shadow: 0 0 0 3px rgba(0, 117, 183, 0.12);
+}
+
+.tt-booking small {
+    color: #b42318;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.tt-booking__submit {
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media (max-width: 1100px) {
+    .tt-hero__grid,
+    .tt-about__grid,
+    .tt-contact {
+        grid-template-columns: 1fr;
+    }
+
+    .tt-hero__visual {
+        min-height: auto;
+    }
+
+    .tt-hero__visual img {
+        height: 460px;
+    }
+
+    .tt-hero-card {
+        right: 22px;
+    }
+
+    .tt-service-grid,
+    .tt-package-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .tt-staff-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .tt-gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 820px) {
+    .tt-shell {
+        width: min(100% - 28px, 720px);
+    }
+
+    .tt-topbar__inner {
+        justify-content: center;
+    }
+
+    .tt-topbar__cta,
+    .tt-topbar__inner span {
+        display: none;
+    }
+
+    .tt-menu-button {
+        display: grid;
+    }
+
+    .tt-nav {
+        min-height: 78px;
+    }
+
+    .tt-nav-links {
+        position: absolute;
+        top: 122px;
+        right: 14px;
+        left: 14px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        border: 1px solid var(--tt-border);
+        border-radius: 16px;
+        background: var(--tt-white);
+        padding: 14px;
+        box-shadow: 0 18px 46px rgba(16, 42, 67, 0.14);
+    }
+
+    .tt-nav-links.is-open {
+        display: flex;
+    }
+
+    .tt-nav-links a {
+        justify-content: center;
+    }
+
+    .tt-nav-links .tt-nav-button {
+        margin-left: 0;
+    }
+
+    .tt-hero__grid {
+        min-height: auto;
+        padding: 58px 0 70px;
+        gap: 36px;
+    }
+
+    .tt-hero h1 {
+        font-size: clamp(38px, 11vw, 54px);
+    }
+
+    .tt-section {
+        padding: 68px 0;
+    }
+
+    .tt-about {
+        background: var(--tt-soft-2);
+    }
+
+    .tt-service-grid,
+    .tt-package-grid,
+    .tt-staff-grid,
+    .tt-gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tt-gallery-grid {
+        grid-auto-rows: 230px;
+    }
+
+    .tt-gallery-grid figure.is-wide {
+        grid-column: span 1;
+    }
+
+    .tt-booking__row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .tt-brand small {
+        display: none;
+    }
+
+    .tt-brand strong {
+        font-size: 21px;
+    }
+
+    .tt-hero__actions,
+    .tt-button {
+        width: 100%;
+    }
+
+    .tt-hero__visual img {
+        height: 350px;
+        border-radius: 16px;
+    }
+
+    .tt-hero-card {
+        position: static;
+        width: 100%;
+        margin-top: 14px;
+    }
+
+    .tt-service-card__icon {
+        top: 162px;
+    }
+
+    .tt-footer .tt-shell {
+        display: grid;
+    }
+
+    .tt-booking__panel {
+        padding: 24px 18px;
+    }
+}

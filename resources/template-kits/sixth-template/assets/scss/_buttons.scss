@@ -1,0 +1,288 @@
+/*----------------------------------------------
+    # Buttons style here
+----------------------------------------------*/
+// .theme-btn {
+//     display: inline-block;
+//     position: relative;
+//     padding: 22px 30px;
+//     gap: 10px;
+//     color: $white;
+//     font-family: $body-font;
+//     font-size: 18px;
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: 150%;
+//     background: $theme-color;
+//     z-index: 1;
+//     line-height: 1;
+//     overflow: hidden;
+//     border: none;
+//     transition: all 0.3s ease-in-out; 
+//     -webkit-transition: all 0.3s ease-in-out;
+//     -moz-transition: all 0.3s ease-in-out;
+//     -ms-transition: all 0.3s ease-in-out;
+//     -o-transition: all 0.3s ease-in-out;
+//     &:before {
+//         content: "";
+//         background-color: $text-color; 
+//         width: 0;
+//         height: 50%;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         z-index: -1;
+//         -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+//         transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+//         -moz-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+//         -ms-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+//         -o-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+// }
+
+//     &:after {
+//         content: "";
+//         background-color: $text-color; 
+//         width: 0;
+//         height: 50%;
+//         position: absolute;
+//         bottom: 0;
+//         right: 0;
+//         z-index: -1;
+//         -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+//         transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+//         -moz-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+//         -ms-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+//         -o-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+// }
+
+//     i {
+//         margin-left: 10px;
+//     }
+
+//     &:hover {
+//         background-color: $theme-color-2;
+//         color: $white!important;     
+//         &::before,&::after {
+//             width: 100%;        
+//         }
+//     }
+
+//     &.style2{
+//         background: $white;
+//         color: $title-color;
+//         border: 1px solid $theme-color;
+//         &:hover{ 
+//          color: $white!important;
+//          border: 1px solid $text-color;
+//         }
+//         @include breakpoint (max-md){
+//             padding: 21px 40px;
+//         }
+//    }
+
+//    &.style3{
+//     background: $theme-color-2;
+//     color: $title-color;
+//     &:before {
+//         content: "";
+//         background-color: $title-color; 
+//         width: 0;
+//         height: 50%;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         z-index: -1;
+//         -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+//         transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+//         -moz-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+//         -ms-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+//         -o-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+// }
+
+//     &:after {
+//         content: "";
+//         background-color: $title-color; 
+//         width: 0;
+//         height: 50%;
+//         position: absolute;
+//         bottom: 0;
+//         right: 0;
+//         z-index: -1;
+//         -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+//         transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+//         -moz-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+//         -ms-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+//         -o-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+// }
+//     &:hover{
+//         background: $theme-color;
+//         color: $white!important;        
+//         &::before,&::after {
+//             width: 100%;        
+//         }
+//     }
+//    }
+
+//     @include breakpoint (max-md){
+//         padding: 20px 32px;
+//     }
+
+//     @include breakpoint (max-sm){
+//         padding: 18px 30px;
+//         font-size: 14px;
+//     }
+// }
+
+.theme-btn {
+    display: inline-block;
+    position: relative;
+    padding: 22px 30px;
+    gap: 10px;
+    color: $white;
+    font-family: $body-font;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    background: $theme-color;
+    z-index: 1;
+    line-height: 1;
+    overflow: hidden;
+    border: none;
+    transition: all 0.3s ease-in-out; 
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+
+    i {
+        margin-left: 6px;
+    }
+
+    &:before {
+        transition-duration: 800ms;
+        position: absolute;
+        width: 210%;
+        height: 290%;
+        content: "";
+        top: 162%;
+        left: 50%;
+        background: $text-color;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%) rotate(-8deg);
+        border-radius: 80%;
+        z-index: -1;
+      }
+
+      &:hover {
+        color: $white!important;
+        &:before {
+            top: -96%;
+          }
+      }
+  }
+  
+ 
+    
+  
+.theme-btn-2 {
+    color: $title-color; 
+    font-family: $body-font;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;  
+    letter-spacing: 3.08px;
+    text-transform: uppercase;
+    &:hover {
+        letter-spacing: 5px;
+    }
+}
+
+
+.arrow-btn {
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    right: -43px;
+    width: 43px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    background: $theme-color;
+    color: $white;
+    margin-top: -0.4em;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    @include transition;
+    &:hover{
+        background: $theme-color-2;
+        color: $title-color;
+    }
+
+    &.style2{
+        background: $theme-color-2;
+        color: $title-color;
+        &:hover{  
+            background: $theme-color;
+            color: $white;
+        }
+    }
+}
+
+.btn-wrapper{
+    position: relative;
+    max-width: 220px;
+    &:hover{
+        .arrow-btn { 
+            background: $theme-color-2;
+            color: $title-color;
+        }
+        .theme-btn{
+            background-color: $theme-color-2;
+            color: $title-color;
+        } 
+    }
+    &:hover{
+        .arrow-btn { 
+            &.style2{
+                background: $title-color;
+                color: $white;
+            }
+        }
+        .theme-btn{
+            &.style3{
+                background-color: $title-color;
+                color: $white;
+            }
+        } 
+    }
+}
+
+.link-btn {
+    display: inline-block;
+    color: $text-color;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+
+    i {
+        margin-left: 10px;
+        transform: rotate(-40deg);
+        @include transition
+    }
+
+    &:hover {
+        color: $theme-color-2;
+        i {
+            margin-left: 10px;
+            transform: rotate(0);
+        }
+    }
+}
+
+//>>>>> Component Button End <<<<<//

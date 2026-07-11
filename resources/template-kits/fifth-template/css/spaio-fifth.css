@@ -1,0 +1,1043 @@
+.fifth-template-site {
+    --fivt-charcoal: #323232;
+    --fivt-text: #757575;
+    --fivt-coral: #f9a392;
+    --fivt-aqua: #8ed4cc;
+    --fivt-cream: #faf7f2;
+    --fivt-mist: #edf7f6;
+    --fivt-border: #eadfd8;
+    --fivt-white: #ffffff;
+    min-height: 100vh;
+    background: var(--fivt-white);
+    color: var(--fivt-text);
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+.fifth-template-site * {
+    box-sizing: border-box;
+}
+
+.fifth-template-site a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.fifth-template-site button,
+.fifth-template-site input,
+.fifth-template-site textarea {
+    font: inherit;
+}
+
+.fivt-shell {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+.fivt-topbar {
+    border-bottom: 1px solid var(--fivt-border);
+    background: var(--fivt-cream);
+    color: var(--fivt-text);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.fivt-topbar__inner,
+.fivt-topbar__inner > div,
+.fivt-topbar__inner a,
+.fivt-topbar__inner span,
+.fivt-nav,
+.fivt-nav-links,
+.fivt-hero__actions,
+.fivt-card-actions,
+.fivt-contact-list a,
+.fivt-contact-list span,
+.fivt-socials a,
+.fivt-alert,
+.fivt-button {
+    display: flex;
+    align-items: center;
+}
+
+.fivt-topbar__inner {
+    min-height: 42px;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.fivt-topbar__inner > div {
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.fivt-topbar__inner a,
+.fivt-topbar__inner span {
+    gap: 8px;
+}
+
+.fivt-topbar svg {
+    color: var(--fivt-coral);
+}
+
+.fivt-header {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 18px 48px rgba(50, 50, 50, 0.08);
+    backdrop-filter: blur(18px);
+}
+
+.fivt-nav {
+    position: relative;
+    min-height: 112px;
+    justify-content: center;
+}
+
+.fivt-brand {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: grid;
+    justify-items: center;
+    gap: 8px;
+    transform: translate(-50%, -50%);
+}
+
+.fivt-brand img {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    object-fit: contain;
+    background: var(--fivt-white);
+    box-shadow: 0 12px 32px rgba(249, 163, 146, 0.18);
+}
+
+.fivt-brand span {
+    color: var(--fivt-charcoal);
+    font-family: "Lora", Georgia, serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.fivt-nav-links {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.fivt-nav-links a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 0;
+    padding: 0 12px;
+    color: var(--fivt-charcoal);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+.fivt-nav-links a:nth-child(3) {
+    margin-right: 250px;
+}
+
+.fivt-nav-links a:hover,
+.fivt-nav-links .fivt-nav-cta {
+    color: var(--fivt-coral);
+}
+
+.fivt-menu-button {
+    display: none;
+    width: 48px;
+    height: 48px;
+    place-items: center;
+    border: 1px solid var(--fivt-border);
+    border-radius: 0;
+    background: var(--fivt-white);
+    color: var(--fivt-charcoal);
+}
+
+.fivt-hero {
+    position: relative;
+    min-height: 760px;
+    overflow: hidden;
+    background: var(--fivt-charcoal);
+}
+
+.fivt-hero > img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fivt-hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(50, 50, 50, 0.82), rgba(50, 50, 50, 0.46), rgba(50, 50, 50, 0.22));
+}
+
+.fivt-hero__content {
+    position: relative;
+    z-index: 1;
+    min-height: 760px;
+    display: grid;
+    align-content: center;
+    justify-items: start;
+    padding: 92px 0;
+}
+
+.fivt-kicker,
+.fivt-section-title p {
+    margin: 0;
+    color: var(--fivt-coral);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.fivt-hero h1,
+.fivt-section-title h2,
+.fivt-contact h2,
+.fivt-booking__panel h2 {
+    font-family: "Lora", Georgia, serif;
+}
+
+.fivt-hero h1 {
+    max-width: 760px;
+    margin: 18px 0 0;
+    color: var(--fivt-white);
+    font-size: clamp(52px, 7vw, 92px);
+    font-weight: 700;
+    line-height: 1.02;
+}
+
+.fivt-hero__content > p:not(.fivt-kicker) {
+    max-width: 620px;
+    margin: 24px 0 0;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+.fivt-hero__actions {
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 34px;
+}
+
+.fivt-button {
+    min-height: 50px;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid transparent;
+    border-radius: 0;
+    padding: 0 24px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease, color 0.22s ease;
+}
+
+.fivt-button:hover,
+.fivt-button:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 34px rgba(50, 50, 50, 0.16);
+    outline: none;
+}
+
+.fivt-button--filled {
+    background: var(--fivt-coral);
+    color: var(--fivt-white);
+}
+
+.fivt-button--filled:hover {
+    background: var(--fivt-aqua);
+}
+
+.fivt-button--ghost {
+    border-color: rgba(255, 255, 255, 0.38);
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--fivt-white);
+}
+
+.fivt-section {
+    padding: 96px 0;
+    background: var(--fivt-white);
+}
+
+.fivt-section-title {
+    max-width: 760px;
+    margin: 0 auto 46px;
+    text-align: center;
+}
+
+.fivt-section-title h2 {
+    margin: 12px 0 0;
+    color: var(--fivt-charcoal);
+    font-size: clamp(34px, 4vw, 52px);
+    line-height: 1.14;
+}
+
+.fivt-section-title span {
+    display: block;
+    margin-top: 16px;
+    color: var(--fivt-text);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.75;
+}
+
+.fivt-section-title--light h2,
+.fivt-section-title--light span {
+    color: var(--fivt-white);
+}
+
+.fivt-about {
+    background: var(--fivt-cream);
+}
+
+.fivt-about__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 520px;
+    align-items: center;
+    gap: 58px;
+}
+
+.fivt-about__content .fivt-section-title {
+    margin: 0;
+    text-align: left;
+}
+
+.fivt-about__metrics {
+    display: grid;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.fivt-about__metrics span {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-bottom: 1px solid var(--fivt-border);
+    padding-bottom: 14px;
+    color: var(--fivt-charcoal);
+    font-weight: 800;
+}
+
+.fivt-about__metrics strong {
+    color: var(--fivt-coral);
+    font-family: "Lora", Georgia, serif;
+    font-size: 28px;
+}
+
+.fivt-about__image {
+    overflow: hidden;
+    border: 12px solid var(--fivt-white);
+    box-shadow: 0 24px 58px rgba(50, 50, 50, 0.12);
+}
+
+.fivt-about__image img {
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+}
+
+.fivt-services {
+    background: var(--fivt-white);
+}
+
+.fivt-service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.fivt-service-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--fivt-border);
+    background: var(--fivt-white);
+    box-shadow: 0 8px 34px rgba(50, 50, 50, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.fivt-service-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(249, 163, 146, 0.54);
+    box-shadow: 0 18px 44px rgba(50, 50, 50, 0.12);
+}
+
+.fivt-service-card__icon {
+    position: absolute;
+    top: 180px;
+    left: 24px;
+    z-index: 2;
+    display: grid;
+    width: 58px;
+    height: 58px;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--fivt-coral);
+    color: var(--fivt-white);
+    box-shadow: 0 14px 26px rgba(249, 163, 146, 0.28);
+}
+
+.fivt-service-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.fivt-service-card > div {
+    padding: 42px 24px 24px;
+}
+
+.fivt-service-card h3,
+.fivt-package-row h3,
+.fivt-staff-card h3 {
+    margin: 0;
+    color: var(--fivt-charcoal);
+    font-family: "Lora", Georgia, serif;
+    font-size: 24px;
+    line-height: 1.24;
+}
+
+.fivt-service-card p,
+.fivt-package-row li,
+.fivt-staff-card p,
+.fivt-contact p {
+    color: var(--fivt-text);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.75;
+}
+
+.fivt-service-card p {
+    min-height: 78px;
+    margin: 12px 0 0;
+}
+
+.fivt-service-card strong {
+    display: block;
+    margin: 16px 0;
+    color: var(--fivt-coral);
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.fivt-card-actions {
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.fivt-card-actions a {
+    min-height: 36px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    border: 1px solid var(--fivt-border);
+    padding: 0 12px;
+    color: var(--fivt-charcoal);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.fivt-card-actions a:hover {
+    border-color: var(--fivt-aqua);
+    color: var(--fivt-aqua);
+}
+
+.fivt-offers {
+    background: var(--fivt-charcoal);
+}
+
+.fivt-offers__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 420px;
+    align-items: center;
+    gap: 54px;
+}
+
+.fivt-offers .fivt-section-title {
+    margin: 0 0 34px;
+    text-align: left;
+}
+
+.fivt-package-list {
+    display: grid;
+    gap: 14px;
+}
+
+.fivt-package-row {
+    display: grid;
+    grid-template-columns: 110px minmax(0, 1fr) 170px;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.07);
+    padding: 16px;
+}
+
+.fivt-package-row img {
+    width: 110px;
+    height: 92px;
+    object-fit: cover;
+}
+
+.fivt-package-row h3 {
+    color: var(--fivt-white);
+}
+
+.fivt-package-row ul {
+    display: grid;
+    gap: 7px;
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.fivt-package-row li {
+    display: flex;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.fivt-package-row li svg {
+    flex: 0 0 auto;
+    margin-top: 5px;
+    color: var(--fivt-aqua);
+}
+
+.fivt-package-row aside {
+    display: grid;
+    justify-items: end;
+    gap: 7px;
+}
+
+.fivt-package-row aside span {
+    color: rgba(255, 255, 255, 0.45);
+    font-weight: 800;
+    text-decoration: line-through;
+}
+
+.fivt-package-row aside strong {
+    color: var(--fivt-coral);
+    font-size: 24px;
+}
+
+.fivt-package-row button {
+    border: 0;
+    background: transparent;
+    color: var(--fivt-aqua);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.fivt-offers__image {
+    border: 12px solid rgba(255, 255, 255, 0.08);
+}
+
+.fivt-offers__image img {
+    width: 100%;
+    min-height: 520px;
+    object-fit: cover;
+}
+
+.fivt-staff-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.fivt-staff-card {
+    overflow: hidden;
+    border: 1px solid var(--fivt-border);
+    background: var(--fivt-white);
+    box-shadow: 0 8px 34px rgba(50, 50, 50, 0.06);
+}
+
+.fivt-staff-card img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+}
+
+.fivt-staff-card div {
+    padding: 22px;
+}
+
+.fivt-staff-card span {
+    display: block;
+    margin-top: 8px;
+    color: var(--fivt-coral);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.fivt-staff-card p {
+    margin: 12px 0 0;
+}
+
+.fivt-gallery {
+    background: var(--fivt-mist);
+}
+
+.fivt-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-auto-rows: 230px;
+    gap: 16px;
+}
+
+.fivt-gallery-grid figure {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    background: var(--fivt-charcoal);
+}
+
+.fivt-gallery-grid figure.is-wide {
+    grid-column: span 2;
+}
+
+.fivt-gallery-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.45s ease;
+}
+
+.fivt-gallery-grid figure:hover img {
+    transform: scale(1.06);
+}
+
+.fivt-gallery-grid figcaption {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+    background: rgba(255, 255, 255, 0.92);
+    padding: 10px 12px;
+    color: var(--fivt-charcoal);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.fivt-contact-section {
+    background: var(--fivt-cream);
+}
+
+.fivt-contact {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 420px;
+    gap: 48px;
+    align-items: start;
+}
+
+.fivt-contact h2 {
+    max-width: 650px;
+    margin: 12px 0 0;
+    color: var(--fivt-charcoal);
+    font-size: clamp(36px, 4vw, 58px);
+    line-height: 1.08;
+}
+
+.fivt-contact p {
+    max-width: 620px;
+    margin: 18px 0 0;
+    font-size: 17px;
+}
+
+.fivt-contact aside {
+    border: 1px solid var(--fivt-border);
+    background: var(--fivt-white);
+    padding: 24px;
+    box-shadow: 0 14px 36px rgba(50, 50, 50, 0.08);
+}
+
+.fivt-contact-list {
+    display: grid;
+    gap: 12px;
+}
+
+.fivt-contact-list a,
+.fivt-contact-list span {
+    gap: 10px;
+    min-height: 46px;
+    border: 1px solid var(--fivt-border);
+    padding: 10px 13px;
+    color: var(--fivt-charcoal);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.fivt-contact-list svg {
+    color: var(--fivt-coral);
+    flex: 0 0 auto;
+}
+
+.fivt-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.fivt-socials a,
+.fivt-socials span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    border: 1px solid var(--fivt-border);
+    padding: 9px 12px;
+    color: var(--fivt-charcoal);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.fivt-footer {
+    background: var(--fivt-charcoal);
+    color: rgba(255, 255, 255, 0.72);
+    padding: 26px 0;
+}
+
+.fivt-footer .fivt-shell {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.fivt-footer strong {
+    color: var(--fivt-white);
+}
+
+.fivt-empty {
+    margin: 28px 0 0;
+    border: 1px dashed var(--fivt-border);
+    padding: 24px;
+    text-align: center;
+    color: var(--fivt-text);
+    font-weight: 700;
+}
+
+.fivt-empty--light {
+    color: var(--fivt-white);
+}
+
+.fivt-alert {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 70;
+    max-width: min(420px, calc(100vw - 44px));
+    gap: 12px;
+    border: 1px solid rgba(249, 163, 146, 0.28);
+    background: var(--fivt-white);
+    padding: 15px 16px;
+    color: var(--fivt-charcoal);
+    box-shadow: 0 22px 50px rgba(50, 50, 50, 0.18);
+}
+
+.fivt-alert svg {
+    color: var(--fivt-coral);
+    flex: 0 0 auto;
+}
+
+.fivt-alert span {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.45;
+}
+
+.fivt-alert button {
+    display: grid;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    place-items: center;
+    border: 0;
+    border-radius: 50%;
+    background: var(--fivt-cream);
+    color: var(--fivt-charcoal);
+    cursor: pointer;
+}
+
+.fivt-booking {
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    display: grid;
+    place-items: center;
+    padding: 22px;
+}
+
+.fivt-booking__backdrop {
+    position: absolute;
+    inset: 0;
+    border: 0;
+    background: rgba(50, 50, 50, 0.7);
+}
+
+.fivt-booking__panel {
+    position: relative;
+    z-index: 1;
+    width: min(620px, 100%);
+    max-height: calc(100vh - 44px);
+    overflow: auto;
+    background: var(--fivt-white);
+    padding: 30px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.24);
+}
+
+.fivt-booking__close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    display: grid;
+    width: 36px;
+    height: 36px;
+    place-items: center;
+    border: 0;
+    border-radius: 50%;
+    background: var(--fivt-cream);
+    color: var(--fivt-charcoal);
+    cursor: pointer;
+}
+
+.fivt-booking__panel h2 {
+    margin: 10px 42px 0 0;
+    color: var(--fivt-charcoal);
+    font-size: 31px;
+}
+
+.fivt-booking__panel > strong {
+    display: block;
+    margin-top: 8px;
+    color: var(--fivt-coral);
+    font-size: 20px;
+}
+
+.fivt-booking__fields {
+    display: grid;
+    gap: 14px;
+    margin-top: 24px;
+}
+
+.fivt-booking__row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.fivt-booking label {
+    display: grid;
+    gap: 8px;
+}
+
+.fivt-booking label span {
+    color: var(--fivt-charcoal);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.fivt-booking input,
+.fivt-booking textarea {
+    width: 100%;
+    border: 1px solid var(--fivt-border);
+    padding: 12px 14px;
+    color: var(--fivt-charcoal);
+    outline: none;
+}
+
+.fivt-booking textarea {
+    min-height: 96px;
+    resize: vertical;
+}
+
+.fivt-booking input:focus,
+.fivt-booking textarea:focus {
+    border-color: var(--fivt-coral);
+    box-shadow: 0 0 0 3px rgba(249, 163, 146, 0.14);
+}
+
+.fivt-booking small {
+    color: #b42318;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.fivt-booking__submit {
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media (max-width: 1120px) {
+    .fivt-nav {
+        justify-content: space-between;
+    }
+
+    .fivt-brand {
+        position: static;
+        transform: none;
+    }
+
+    .fivt-brand span {
+        white-space: normal;
+    }
+
+    .fivt-nav-links {
+        width: auto;
+    }
+
+    .fivt-nav-links a:nth-child(3) {
+        margin-right: 0;
+    }
+
+    .fivt-about__grid,
+    .fivt-offers__grid,
+    .fivt-contact {
+        grid-template-columns: 1fr;
+    }
+
+    .fivt-service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .fivt-staff-grid,
+    .fivt-gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 820px) {
+    .fivt-shell {
+        width: min(100% - 28px, 720px);
+    }
+
+    .fivt-topbar__inner {
+        justify-content: center;
+    }
+
+    .fivt-topbar__inner span,
+    .fivt-topbar__inner a:nth-child(2) {
+        display: none;
+    }
+
+    .fivt-nav {
+        min-height: 82px;
+    }
+
+    .fivt-menu-button {
+        display: grid;
+    }
+
+    .fivt-nav-links {
+        position: absolute;
+        top: 92px;
+        right: 14px;
+        left: 14px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        border: 1px solid var(--fivt-border);
+        background: var(--fivt-white);
+        padding: 14px;
+        box-shadow: 0 18px 46px rgba(50, 50, 50, 0.14);
+    }
+
+    .fivt-nav-links.is-open {
+        display: flex;
+    }
+
+    .fivt-nav-links a {
+        justify-content: center;
+    }
+
+    .fivt-hero,
+    .fivt-hero__content {
+        min-height: 640px;
+    }
+
+    .fivt-hero h1 {
+        font-size: clamp(40px, 11vw, 58px);
+    }
+
+    .fivt-section {
+        padding: 68px 0;
+    }
+
+    .fivt-service-grid,
+    .fivt-staff-grid,
+    .fivt-gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fivt-gallery-grid {
+        grid-auto-rows: 230px;
+    }
+
+    .fivt-gallery-grid figure.is-wide {
+        grid-column: span 1;
+    }
+
+    .fivt-package-row {
+        grid-template-columns: 88px minmax(0, 1fr);
+    }
+
+    .fivt-package-row img {
+        width: 88px;
+        height: 88px;
+    }
+
+    .fivt-package-row aside {
+        grid-column: 1 / -1;
+        justify-items: start;
+    }
+
+    .fivt-booking__row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .fivt-brand img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .fivt-brand span {
+        font-size: 20px;
+    }
+
+    .fivt-button,
+    .fivt-hero__actions {
+        width: 100%;
+    }
+
+    .fivt-about__image img {
+        height: 360px;
+    }
+
+    .fivt-footer .fivt-shell {
+        display: grid;
+    }
+
+    .fivt-booking__panel {
+        padding: 24px 18px;
+    }
+}

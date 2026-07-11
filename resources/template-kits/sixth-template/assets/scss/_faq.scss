@@ -1,0 +1,170 @@
+/*----------------------------------------------
+    # Faq style here
+----------------------------------------------*/
+.faq-content {
+    @include breakpoint (max-xl) {
+        margin-top: 40px;
+    }
+    .accordion-item {
+        border: 0;
+        background-color: $white;
+
+        .accordion-header {
+            .accordion-button {
+                font-weight: 600;
+                color: $title-color;
+                letter-spacing: -.2px;
+                border: none; 
+                box-shadow: none;
+                background-color: $bg-color-2;
+                padding: 17px 20px;
+                text-transform: capitalize;
+                font-size: 20px;
+                border-radius: 12px 12px 0 0;
+                -webkit-border-radius: 12px 12px 0 0;
+                -moz-border-radius: 12px 12px 0 0;
+                -ms-border-radius: 12px 12px 0 0;
+                -o-border-radius: 12px 12px 0 0;
+
+                &:after {
+                    display: inline-block;
+                    background-image: url(../images/icon/chevron-down.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    color: $white;
+                    font-weight: 500;
+                    padding: 20px;
+                    background-color: $white;
+                    text-align: center;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    transition: all 0.3s ease-in-out !important;
+                    -webkit-transition: all 0.3s ease-in-out !important;
+                    -moz-transition: all 0.3s ease-in-out !important;
+                    -ms-transition: all 0.3s ease-in-out !important;
+                    -o-transition: all 0.3s ease-in-out !important;
+                }
+
+                &:not(.collapsed):after {
+                    background-image: url(../images/icon/chevron-up.svg);
+                    font-weight: 500;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color: $title-color;
+                    color: $white;
+                    transform: rotate(0);
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    -webkit-transform: rotate(0);
+                    -moz-transform: rotate(0);
+                    -ms-transform: rotate(0);
+                    -o-transform: rotate(0);
+                }
+
+                &.collapsed {
+                    background-color: transparent;
+                    border: 1px solid $border-color;
+                    padding: 17px 20px;
+                    color: $title-color;
+                }
+
+            }
+        }
+
+        .accordion-collapse {
+            border: none;
+
+            .accordion-body {
+                padding-right: 150px;
+                padding-left: 30px;
+                padding-top: 15px;
+                color: $text-color;
+                background-color: $theme-color;
+
+                @include breakpoint (max-xxl) {
+                    padding-right: 50px;
+                }
+
+                @include breakpoint (max-lg) {
+                    padding-right: 30px;
+                }
+            }
+        }
+    } 
+
+    &.style-1 { 
+        .accordion-item {
+            background-color: $bg-color-2;
+            box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
+            border: 1px solid $border-color;
+            border-radius: 12px;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            -ms-border-radius: 12px;
+            -o-border-radius: 12px;
+
+            .accordion-header {
+                .accordion-button {
+                    background-color: $theme-color; 
+                    color: $white;
+                    &.collapsed {
+                        color: $title-color;
+                        font-family: inherit;
+                        text-align: left;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: inherit;
+                        background-color: $white;
+                        border: none;
+                        border-radius: 12px;
+                        -webkit-border-radius: 12px;
+                        -moz-border-radius: 12px;
+                        -ms-border-radius: 12px;
+                        -o-border-radius: 12px;
+                    }
+                }
+            }
+
+            .accordion-collapse { 
+                .accordion-body {
+                    border: none;
+                    padding-bottom: 30px;
+                    background-color: $white;
+                    border-radius: 0 0 12px 12px;
+                    -webkit-border-radius: 0 0 12px 12px;
+                    -moz-border-radius: 0 0 12px 12px;
+                    -ms-border-radius: 0 0 12px 12px;
+                    -o-border-radius: 0 0 12px 12px;
+                }
+            }
+        }
+    }
+}
+
+ .faq-thumb {
+    img {
+        width: 100%;
+    }
+    .thumb-wrap {
+        position: relative;
+        img {
+            position: relative;
+            width: 100%;
+        }
+
+        .conter-box {
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-bottom: 15px solid $white;
+            border-left: 15px solid $white;
+        }
+    }
+ }

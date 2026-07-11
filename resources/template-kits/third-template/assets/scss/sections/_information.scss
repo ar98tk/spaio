@@ -1,0 +1,121 @@
+/**
+ * Information
+ */
+
+.tm-information {
+    padding: 30px 70px;
+    background: $color-grey;
+    box-shadow: 0 2px 10px rgba(#000000, 0.25);
+
+    &.tm-information-2{
+        padding: 0;
+        box-shadow: none;
+        background: transparent;
+    }
+
+    &-timing {
+        h5 {
+            font-weight: 500;
+        }
+
+        ul {
+            padding-left: 0;
+            margin-bottom: 0;
+
+            li {
+                list-style: none;
+                @include clearfix();
+                line-height: 36px;
+                border-bottom: 1px dashed $color-border;
+
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+
+                span {
+                    float: right;
+                }
+            }
+        }
+    }
+
+    &-contact {
+        margin-top: 50px;
+        padding-right: 10%;
+
+        h5 {
+            font-weight: 500;
+        }
+
+        ul {
+            padding-left: 0;
+            margin-bottom: 0;
+
+            li {
+                list-style: none;
+                line-height: 30px;
+                padding-left: 100px;
+                position: relative;
+
+                b {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100px;
+
+                    &:after {
+                        content: ":";
+                        padding: 0 15px;
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+
+    &-map{
+        min-height: 272px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    @media #{$layout-notebook} {
+        padding: 30px;
+    }
+
+    @media #{$layout-mobile-lg}{
+        padding: 30px;
+    }
+
+    @media #{$layout-mobile-sm}{
+        padding: 30px;
+
+        &-contact{
+            ul{
+                li{
+                    padding-left: 0;
+
+                    &:not(:last-child){
+                        margin-bottom: 15px;
+                    }
+
+                    b{
+                        position: relative;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tm-appointment {
+    h2 {
+        margin-bottom: 40px;
+        margin-top: -8px;
+    }
+
+    @media #{$layout-tablet} {
+        margin-top: 50px;
+    }
+}

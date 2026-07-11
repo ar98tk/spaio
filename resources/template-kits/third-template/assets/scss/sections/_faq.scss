@@ -1,0 +1,142 @@
+/**
+ * Faq Area
+ */
+
+.tm-faq {
+    &-image {
+        text-align: center;
+        padding-top: 53px;
+        background-image: url(../images/icons/faq-image-bg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    &-content {
+        &>h2 {
+            margin-bottom: 35px;
+            margin-top: -6px;
+        }
+    }
+
+    @media #{$layout-tablet} {
+        &-image {
+            margin-top: 80px;
+        }
+    }
+
+    @media #{$layout-mobile-lg} {
+        &-image {
+            margin-top: 70px;
+        }
+    }
+}
+
+/* Accordion Styles */
+.tm-accordion {
+
+    .card {
+        background: transparent;
+        border: 1px solid $color-border;
+        border-radius: 0;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .card-header {
+        padding: 0;
+        background: transparent;
+        border: 0;
+
+        button {
+            height: auto;
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 11px 0;
+            padding-left: 75px;
+            font-size: 18px;
+            font-family: $ff-heading;
+            color: $color-heading;
+            line-height: 28px;
+            font-weight: 500;
+            text-decoration: none !important;
+            border: 0;
+            position: relative;
+            white-space: inherit;
+
+            &::before {
+                content: "+";
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                line-height: 50px;
+                text-align: center;
+                width: 55px;
+                background: rgba($color-theme, 0.1);
+                transition: all 0.2s ease-in-out 0s;
+            }
+
+            &.collapsed {
+                &::before {
+                    content: "+";
+                }
+            }
+
+            &:not(.collapsed) {
+                &:before {
+                    content: "-";
+                    background: rgba($color-theme, 0.05);
+                }
+            }
+        }
+    }
+
+    .card-body {
+        padding: 5px 15px 5px 75px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            line-height: 50px;
+            text-align: center;
+            width: 55px;
+            background: rgba($color-theme, 0.05);
+        }
+    }
+
+    @media #{$layout-mobile-sm} {
+        .card-header {
+            button {
+                font-size: 16px;
+                padding-left: 45px;
+
+                &::before {
+                    background: none;
+                    width: 45px;
+                }
+    
+                &:not(.collapsed) {
+                    &:before {
+                        background: none;
+                    }
+                }
+            }
+        }
+
+        .card-body {
+            padding: 5px 15px 5px 15px;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
